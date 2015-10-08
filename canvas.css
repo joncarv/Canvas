@@ -1,0 +1,332 @@
+body {
+	background-color: #fff;
+}
+
+.container1 {
+  	display: -webkit-flex;
+  	display: flex;
+  	height: 375px;
+	border: solid 2px #000;
+	background-color: #fafafa;
+	border-bottom: dashed 2px #000;
+}
+
+.container2 {
+  	display: -webkit-flex;
+  	display: flex;
+  	height: 175px;
+	border: solid 2px #000;
+	border-top: none;
+	background-color: #fafafa;
+}
+
+#menu {
+	text-align:center;
+}
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	background-color:#fff;
+	list-style:none;
+	text-align:center;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+	padding: 8px;
+	display: inline-block;
+ 
+	/* visual do link */
+	background-color:#fff;
+	color: #333;
+	text-decoration: none;
+	
+}
+
+#menu ul li a:hover {
+	text-decoration: underline; 
+}
+
+#menu span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.flex {
+  	-webkit-flex: 1;
+  	flex: 1;
+	padding:5px;
+	text-align:right;
+}
+
+#canvas-area1, #canvas-area2, #canvas-area3, #canvas-area4, #canvas-area5, #canvas-area7, #canvas-area8 {
+	border-right: dashed 2px #000;
+}
+
+.draggable {
+	width: 160px;
+	height: 100px;
+	position: absolute;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: solid 1px #d8d8d8;
+	/*background-color: #f2f2f2;*/
+	background-color: #f2f2f2;
+	border-radius: 0.2em;
+	padding:5px;
+
+	-webkit-transform: translate(0px, 0px);
+	        transform: translate(0px, 0px);
+		
+	box-shadow: 0px 4px 5px #bdbdbd; -moz-box-shadow: 0px 4px 5px #bdbdbd; -webkit-box-shadow: 0px 4px 5px #bdbdbd;
+}
+
+h2, h3, h4 {
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+}
+
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color:#848484;
+}
+
+a:hover {
+	text-decoration: underline; 
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+	border: solid 3px #6e6e6e;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #00d9ff;
+}
+
+a.link-modal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+}
+
+a.link-modal:link, a.link-modal:visited {
+	text-decoration: none;
+	color:#000;
+}
+
+a.link-modal:hover {
+	text-decoration: underline; 
+}
+
+a.link-modal:active {
+	text-decoration: none;
+}
+
+a.link-menu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+}
+
+a.link-menu:link, a.link-menu:visited {
+	text-decoration: none;
+	color:#000;
+}
+
+a.link-menu:hover {
+	text-decoration: underline; 
+}
+
+a.link-menu:active {
+	text-decoration: none;
+}
+
+#canvas-area1 {
+	background: url('icones/key_partners.png') top left no-repeat;
+}
+
+#canvas-area2 {
+	background: url('icones/key_activities.png') top left no-repeat;
+}
+
+#canvas-area3 {
+	background: url('icones/value_propositions.png') top left no-repeat;
+}
+
+#canvas-area4 {
+	background: url('icones/channels.png') top left no-repeat;
+}
+
+#canvas-area5 {
+	background:url('icones/customer_segments.png') top left no-repeat;
+}
+
+#canvas-area6 {
+	background: url('icones/cost_structure.png') top left no-repeat;
+}
+
+#canvas-area7 {
+	background: url('icones/key_resources.png') top left no-repeat;
+}
+
+#canvas-area8 {
+	background: url('icones/revenue_streams.png') top left no-repeat;
+}
+
+#canvas-area9 {
+	background: url('icones/customer_relationships.png') top left no-repeat;
+}
+
+#lista-tarefas {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    border-collapse: collapse;
+	position:absolute;
+	left: 20%;
+	right: 20%;
+}
+
+#lista-tarefas td, #lista-tarefas th {
+    font-size: 1em;
+    border: 2px solid #000;
+    padding: 7px;
+}
+
+#lista-tarefas th {
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #fbf8ef;
+    color: #000;
+}
+
+#lista-tarefas tr.alt td {
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+#lista-topicos {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    border-collapse: collapse;
+	align:center;
+	position:absolute;
+	left: 20%;
+	right: 20%;
+}
+
+#lista-topicos td, #lista-topicos th {
+    font-size: 1em;
+    border: 2px dashed #000;
+	border-right: 0px;
+	border-left: 0px;
+    padding: 10px;
+}
+
+#lista-topicos th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #848484;
+    color: #ffffff;
+}
+
+#lista-topicos tr.alt td {
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+#lista-topicos tr.main td {
+    color: #000000;
+    background-color: #fbf8ef;
+}
+
+a.link-topico {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color:#000;
+}
+
+a.link-topico:link, a.link-topico:visited {
+	text-decoration: none;
+	color:#000;
+}
+
+a.link-topico:hover {
+	text-decoration: underline; 
+}
+
+a.link-topico:active {
+	text-decoration: none;
+}
